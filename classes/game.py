@@ -11,3 +11,5 @@ class Game:
 
         playerOne = Player(nameOfP1)
         playerTwo = Player(nameOfP2)
+        self.isFinished = False
+
