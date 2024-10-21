@@ -1,4 +1,6 @@
 import tkinter as tk
+from faulthandler import disable
+
 
 class Board:
 
@@ -26,6 +28,7 @@ class Board:
     def button_change(self, row, col):
         button = self.buttons[row][col]
         button.config(bg="blue", activebackground="blue")
+        button['state'] = tk.DISABLED
 
     def run(self):
         # Lancer la boucle principale de Tkinter
