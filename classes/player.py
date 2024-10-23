@@ -4,11 +4,11 @@ from classes.ship import Ship
 class Player:
     def __init__(self, name):
 
-        ship1 = Ship(5, True, False)
-        ship2 = Ship(4, True, False)
-        ship3 = Ship(3, True, False)
-        ship4 = Ship(3, True, False)
-        ship5 = Ship(2, True, False)
+        ship1 = Ship(5, True)
+        ship2 = Ship(4, True)
+        ship3 = Ship(3, True)
+        ship4 = Ship(3, True)
+        ship5 = Ship(2, True)
 
         fleet = [
             ship1,
