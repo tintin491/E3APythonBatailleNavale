@@ -1,6 +1,5 @@
 from classes.ship import Ship
 
-
 class Player:
     def __init__(self, name):
 

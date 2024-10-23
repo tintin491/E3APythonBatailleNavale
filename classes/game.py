@@ -1,7 +1,6 @@
 from classes.player import Player
 from classes.ship import Ship
 
-
 class Game:
 
     def __init__(self):
