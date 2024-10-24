@@ -3,13 +3,15 @@ import tkinter as tk
 
 class Board:
 
-    def __init__(self):
+    def __init__(self, J1, J2):
         self.fenetre = tk.Tk()
         self.buttonsPlayerTour = []  # Stocker les boutons du joueur dont c'est le tour
         self.buttonsPlayerNonTour = []  # Stocker les boutons du joueur dont ce n'est pas le tour
         self.create_widgets()
         self.player = 1  # Débuter avec le joueur 1
         self.start = False
+        self.J1 = J1
+        self.J2 = J2
 
     def create_widgets(self):
         # Ajouter un label
@@ -87,8 +89,3 @@ class Board:
     def run(self):
         # Lancer la boucle principale de Tkinter
         self.fenetre.mainloop()
-
-
-# Démarrer l'application
-app = Board()
-app.run()
