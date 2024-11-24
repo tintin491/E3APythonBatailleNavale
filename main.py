@@ -1,10 +1,13 @@
-from classes.board import Board
-from classes.player import Player
+from classes.game import Game
+import tkinter as tk
 
-J1 =  Player("J1")
-J2 =  Player("J2")
-app = Board(J1,J2) # error d'import
-app.run() # error d'import
+root = tk.Tk()
+root.geometry("1600x800")
+app = Game(root)
+app.run()
+
+
+
 
 
 
